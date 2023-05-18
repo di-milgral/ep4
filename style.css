@@ -1,0 +1,49 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    "head head head head"
+    "left main main asid"
+    "foot foot foot foot";
+    background-color: #f9c244;
+    margin: 0;
+    padding: 0;
+    grid-gap: 1rem;
+    color: white;
+}
+.gridh{
+    grid-area: head;
+}
+.grida{
+    grid-area: asid;
+}
+.gride{
+    grid-area: left;
+}
+.gridm{
+    grid-area: main;
+}
+.gridf{
+    grid-area: foot;
+}
+/* header */
+header{
+    background-color: rgb(214, 139, 0);
+}
+/* aside  */
+aside{
+    background-color: gray;
+    border-radius: 5rem;
+}
+/* main  */
+main{
+    background-color: rgba(53,54,58,1);
+    text-align: center;
+    border-radius: 5rem;
+}
+main img{
+    width: 30rem;
+}
+/* footer  */
+footer{
+    background-color: gray;
+}

@@ -2,7 +2,7 @@ body{
     display: grid;
     grid-template-areas: 
     "head head head head"
-    "left main main asid"
+    "esqe main main asid"
     "foot foot foot foot";
     background-color: #f9c244;
     margin: 0;
@@ -12,38 +12,46 @@ body{
 }
 .grid_header{
     grid-area: head;
+    background-color: #f46e49;
 }
 .grid_direita{
     grid-area: asid;
+    background-color: gray;
+    border-radius: 5rem;
+    text-align: center;
 }
 .grid_esquerda{
-    grid-area: left;
+    grid-area: esqe;
+    background-color: gray;
+    border-radius: 5rem;
+    text-align: center;
 }
 .grid_main{
     grid-area: main;
-}
-.grid_footer{
-    grid-area: foot;
-}
-/* header */
-header{
-    background-color: rgb(214, 139, 0);
-}
-/* aside  */
-aside{
-    background-color: gray;
-    border-radius: 5rem;
-}
-/* main  */
-main{
     background-color: rgba(53,54,58,1);
     text-align: center;
     border-radius: 5rem;
 }
-main img{
+.grid_footer{
+    grid-area: foot;
+    background-color: gray;
+}
+/* header */
+.grid_header img{
+    border-radius: 50%;
+}
+/* aside  */
+.grid_esquerda img{
+    width: 20rem;
+}
+.grid_direita img{
+    width: 20rem;
+}
+.grid_direita .grid_esquerda figcaption{
+    font-size: xx-small;
+}
+/* main */
+.grid_main img{
     width: 30rem;
 }
 /* footer  */
-footer{
-    background-color: gray;
-}

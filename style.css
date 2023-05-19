@@ -10,19 +10,19 @@ body{
     grid-gap: 1rem;
     color: white;
 }
-.gridh{
+.grid_header{
     grid-area: head;
 }
-.grida{
+.grid_direita{
     grid-area: asid;
 }
-.gride{
+.grid_esquerda{
     grid-area: left;
 }
-.gridm{
+.grid_main{
     grid-area: main;
 }
-.gridf{
+.grid_footer{
     grid-area: foot;
 }
 /* header */

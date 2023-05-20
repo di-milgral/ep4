@@ -1,5 +1,6 @@
 body{
     display: grid;
+    grid-template-columns: 2fr 3fr 3fr 2fr;
     grid-template-areas: 
     "head head head head"
     "esqe main main asid"
@@ -10,6 +11,7 @@ body{
     grid-gap: 1rem;
     color: white;
 }
+/* grid */
 .grid_header{
     grid-area: head;
     background-color: #f46e49;
@@ -29,8 +31,10 @@ body{
 .grid_main{
     grid-area: main;
     background-color: rgba(53,54,58,1);
-    text-align: center;
+    text-align: justify;
     border-radius: 5rem;
+    padding: 2rem;
+    text-indent: 2rem;
 }
 .grid_footer{
     grid-area: foot;
@@ -40,18 +44,37 @@ body{
 .grid_header img{
     border-radius: 50%;
 }
-/* aside  */
-.grid_esquerda img{
-    width: 20rem;
-}
-.grid_direita img{
-    width: 20rem;
-}
-.grid_direita .grid_esquerda figcaption{
+/* aside */
+aside figcaption{
     font-size: xx-small;
 }
 /* main */
-.grid_main img{
-    width: 30rem;
+.grid_main figcaption{
+    font-size: xx-small;
 }
+main h1{
+    text-align: center;
+}
+main img{
+    display: block;
+    margin: auto;
+    width: 35rem;
+    border-radius: 20px;
+    border: 6px inset white;
+}
+main figcaption{
+    text-align: center;
+}
+main h2{
+    text-align: center;
+    color: blue;
+}
+#dragon{
+    font-size: 72px;
+    color: yellow;
+    margin: 0;
+}
+
+/* fontes */
+
 /* footer  */

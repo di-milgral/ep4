@@ -46,19 +46,17 @@ body{
 /* header */
 .header_imagem{
     display: flex;
-    padding: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
-    text-shadow:
-    -1px -1px 0px blue, 
-    -1px 1px 0px blue,      
-     1px -1px 0px blue,    
-     1px 0px 0px blue;
-     font-family: header;
-     font-size: large;
+    align-items: center;
 }
-header img{
-    width: 5rem;
+.header_imagem img{
+    width: auto;
+    height: 7rem;
+}
+.header_imagem h1{
+    font-family: Concert one;
+    color: black;
+    font-size: 48px;
+    margin: 0px;
 }
 #super{
     width: 12rem;
@@ -111,7 +109,5 @@ main h2{
 
 /* footer  */
 
-@font-face {
-    font-family: header;
-    src: url(fontes/Triforce.ttf);
-}
+/* fontes */
+

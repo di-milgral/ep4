@@ -26,7 +26,6 @@ body{
 }
 .grid_esquerda{
     grid-area: esqe;
-    background-color: gray;
     border-radius: 5rem;
     text-align: center;
 }
@@ -83,6 +82,9 @@ aside figcaption{
     width: 15rem;
     display: block;
     margin: auto;
+}
+.iside h2{
+    color: red;
 }
 
 

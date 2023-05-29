@@ -28,6 +28,7 @@ body{
     grid-area: esqe;
     border-radius: 5rem;
     text-align: center;
+    color: #000;
 }
 .grid_main{
     grid-area: main;

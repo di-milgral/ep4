@@ -28,6 +28,7 @@ body{
     grid-area: esqe;
     border-radius: 5rem;
     text-align: center;
+    margin: 1px 15px 1px 15px;
 
 }
 .grid_main{
@@ -79,7 +80,7 @@ aside figcaption{
     color: white;
     border-radius: 5rem;
 }
-.grid_direita img{
+.grid_direita img, .grid_esquerda img{
     width: 15rem;
     display: block;
     margin: auto;
@@ -91,7 +92,10 @@ aside figcaption{
 .grid_esquerda p{
     color: #000;
 }
-
+.grid_esquerda img{
+    border-radius: 3rem;
+    border: 3px solid black;
+}
 
 /* main */
 .grid_main figcaption{

@@ -85,9 +85,6 @@ aside figcaption{
     display: block;
     margin: auto;
 }
-.grid_direita h1{
-    font-family: 'Cinzel', serif;
-}
 
 .grid_esquerda h2 {
     color: rgb(156, 0, 0);
@@ -101,7 +98,9 @@ aside figcaption{
     border-radius: 3rem;
     border: 3px solid black;
 }
-
+.grid_direita h1, .grid_esquerda h2{
+    font-family: 'Cinzel', serif;
+}
 /* main */
 .grid_main figcaption{
     font-size: xx-small;
@@ -134,7 +133,22 @@ main h2{
     color: yellow;
     margin: 0;
     font-family: 'Cinzel', serif;
+    animation: dragon 3s linear infinite;
 }
+@keyframes dragon {
+    0% {
+      transform: scale(1);
+      text-shadow: 0 0 0 green;
+    }
+    50% {
+      transform: scale(1.1);
+      text-shadow: 0 0 70px green;
+    }
+    100% {
+      transform: scale(1);
+      text-shadow: 0 0 0 green;
+    }
+  }
 #trasnf{
     font-family: 'Righteous', cursive;
     color: red;
@@ -150,6 +164,7 @@ footer{
 footer img{
     width: auto;
     height: 10rem;
+    animation: foot 3s linear infinite;
 }
 footer h2{
     font-family: 'Lobster', cursive;
@@ -169,6 +184,17 @@ footer h4{
     border-radius: 5rem;
     padding: 7px;
 }
+@keyframes foot {
+    0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    
+}
 
-/* fontes */
 

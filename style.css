@@ -118,19 +118,19 @@ main p{/*paragrafo do main*/
     font-family: 'Quicksand', sans-serif;/*modelo da letra*/
     text-indent: 2rem;/*recuo da primeira linha*/
 }
-main figcaption{
-    text-align: center;
+main figcaption{/*figcapition do main*/
+    text-align: center;/*centraliza a fonte*/
 }
-main h2{
-    text-align: center;
-    color: orange;
-    font-family: 'Cinzel', serif;
+main h2{/*h2 do main*/
+    text-align: center;/*centraliza o h2*/
+    color: orange;/*deixa vermelho as letras*/
+    font-family: 'Cinzel', serif;/*modelo da letra*/
 }
-#dragon{
-    font-size: 72px;
-    color: yellow;
-    margin: 0;
-    font-family: 'Cinzel', serif;
+#dragon{/*titulo dio main*/
+    font-size: 72px;/*dimenciona o titulo principal*/
+    color: yellow;/*define a cor*/
+    margin: 0;/*zera a margin*/
+    font-family: 'Cinzel', serif;/*define o tipo de letra*/
     animation: dragon 3s linear infinite; /*nome, tempo e repetição da animação*/
 }
 @keyframes dragon { /* animação */
@@ -147,40 +147,40 @@ main h2{
       text-shadow: 0 0 0 green; /*sombra*/
     }
   }
-#trasnf{
-    font-family: 'Righteous', cursive;
-    color: red;
+#trasnf{/*h1 transformações*/
+    font-family: 'Righteous', cursive;/*modelo da letra*/
+    color: red;/*cor do titulo*/
 }
 
 /* footer  */
-footer{
+footer{/*footer*/
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #f46e49;
+    justify-content: space-evenly;/*limita o espaço*/
+    align-items: center;/*cetraliza na vertical*/
+    background-color: #f46e49;/*define a cor do fumdo*/
 }
-footer img{
-    width: auto;
-    height: 10rem;
+footer img{/*imagen do footer*/
+    width: auto;/*define a largura*/
+    height: 10rem;/*define altura*/
     animation: foot 3s linear infinite; /*nome, tempo e repetição da animação*/
 }
-footer h2{
-    font-family: 'Lobster', cursive;
-    color: #000;
+footer h2{/*h2 do footer*/
+    font-family: 'Lobster', cursive;/*modelo da letra*/
+    color: #000;/*cor da letra*/
 }
-footer a{
-    color: #003558;
-    text-decoration: none;
+footer a{/*fonte do footer*/
+    color: #003558;/*cor do footer*/
+    text-decoration: none;/*sublinha o footer*/
 }
 footer a:hover{
     color: #00558d;
     text-decoration: underline;
 }
-footer h4{
-    color: black;
-    border: 2px solid #000;
-    border-radius: 5rem;
-    padding: 7px;
+footer h4{/*h4 do footer*/
+    color: black;/*cor da fonte*/ 
+    border: 2px solid #000;/*tamanho e cor da borda*/
+    border-radius: 5rem;/*arredonda a borda*/
+    padding: 7px;/*distancia da borda*/
 }
 @keyframes foot {
     0% {

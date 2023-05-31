@@ -131,22 +131,7 @@ main h2{/*h2 do main*/
     color: yellow;/*define a cor*/
     margin: 0;/*zera a margin*/
     font-family: 'Cinzel', serif;/*define o tipo de letra*/
-    animation: dragon 3s linear infinite; /*nome, tempo e repetição da animação*/
 }
-@keyframes dragon { /* animação */
-    0% {
-      transform: scale(1); /*escala original*/
-      text-shadow: 0 0 0 green; /*sobra*/
-    }
-    50% {
-      transform: scale(1.1); /*escala aumentada*/
-      text-shadow: 0 0 70px green; /*sobra no texto*/
-    }
-    100% {
-      transform: scale(1); /*escala original*/
-      text-shadow: 0 0 0 green; /*sombra*/
-    }
-  }
 #trasnf{/*h1 transformações*/
     font-family: 'Righteous', cursive;/*modelo da letra*/
     color: red;/*cor do titulo*/
@@ -154,7 +139,7 @@ main h2{/*h2 do main*/
 
 /* footer  */
 footer{/*footer*/
-    display: flex;
+    display: flex; /*flexbox*/
     justify-content: space-evenly;/*limita o espaço*/
     align-items: center;/*cetraliza na vertical*/
     background-color: #f46e49;/*define a cor do fumdo*/
@@ -173,8 +158,8 @@ footer a{/*fonte do footer*/
     text-decoration: none;/*sublinha o footer*/
 }
 footer a:hover{
-    color: #00558d;
-    text-decoration: underline;
+    color: #00558d; /*animação ao passar o cursor*/
+    text-decoration: underline; /*sublinhado do textos*/
 }
 footer h4{/*h4 do footer*/
     color: black;/*cor da fonte*/ 

@@ -84,39 +84,39 @@ aside figcaption{ /*figcaption do aside*/
     margin: auto; /*margem*/
 }
 
-.grid_esquerda h2 {
-    color: rgb(156, 0, 0);
-    font-family: 'Quicksand', sans-serif;
-    font-size: xx-large;
+.grid_esquerda h2 {/*sub titulo aside da esquerda*/
+    color: rgb(156, 0, 0);/*cor da fonte*/
+    font-family: 'Quicksand', sans-serif;/*estio da fonte*/
+    font-size: xx-large;/*tamanho da fonte*/
 }
-.grid_esquerda p{
-    color: #000;
+.grid_esquerda p{/*paragrafo do aside da esquerda*/
+    color: #000;/*cor da letras*/
 }
-.grid_esquerda img{
-    border-radius: 3rem;
-    border: 3px solid black;
+.grid_esquerda img{/*iamgens do aside da esquerda*/
+    border-radius: 3rem;/*raio da borda*/
+    border: 3px solid black;/*largura e cor da borda*/
 }
 .grid_direita h1, .grid_esquerda h2{ /*tags h2 do aside da direita e da esquerda*/
     font-family: 'Cinzel', serif; /*estilo da fonte*/
 }
 /* main */
-.grid_main figcaption{
-    font-size: xx-small;
+.grid_main figcaption{/*figcapition do main*/
+    font-size: xx-small;/*tamanho da fonte*/
 }
-main h1{
-    text-align: center;
+main h1{/*h1 do main*/
+    text-align: center;/*centralizar o titulos*/
 }
 
-main img{
-    display: block;
-    margin: auto;
-    width: 68%;
-    border-radius: 20px;
-    border: 6px inset white;
+main img{/*imagens do main*/
+    display: block;/*ocupa toda largura*/
+    margin: auto;/*margem automatica*/
+    width: 68%;/*largura da imagem*/
+    border-radius: 20px;/*define o raio da borda*/
+    border: 6px inset white;/*cor e grossura da borda*/
 }
-main p{
-    font-family: 'Quicksand', sans-serif;
-    text-indent: 2rem;
+main p{/*paragrafo do main*/
+    font-family: 'Quicksand', sans-serif;/*modelo da letra*/
+    text-indent: 2rem;/*recuo da primeira linha*/
 }
 main figcaption{
     text-align: center;

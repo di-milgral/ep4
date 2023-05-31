@@ -1,89 +1,87 @@
 body{
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-areas: 
+    grid-template-columns: 1fr 3fr 1fr; /*determinar tamanho para as colunas*/
+    grid-template-areas: /*criar a grade da pagina*/
     "head head head "
     "esqe main asid"
     "foot foot foot ";
-    background-color: #f9c244;
-    margin: 0;
-    padding: 0;
-    grid-gap: 1rem;
-    color: white;
+    background-color: #f9c244; /*cor de fundo*/
+    margin: 0; /* retirar margem*/
+    padding: 0; /*retirar espaço*/
+    grid-gap: 1rem; /*colocar espaço entre os elementos da grade*/
+    color: white; /*cor da fonte*/
 }
 /* grid */
-.grid_header{
-    grid-area: head;
-    background-color: #f46e49;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.grid_header{ /*header*/
+    grid-area: head; /*nome da grid*/
+    background-color: #f46e49; /*cor de fundo*/
+    display: flex; /*flexbox*/
+    justify-content: space-evenly; /*espaço na linha*/
+    align-items: center; /*centralizar verticalmente*/
 }
-.grid_direita{
-    grid-area: asid;
-    text-align: center;
-    margin: 1px 15px 1px 15px;
+.grid_direita{ /*aside da direita*/
+    grid-area: asid; /*nome da grid*/
+    text-align: center; /*alinhar textos ao centro*/
+    margin: 1px 15px 1px 15px; /*margem*/
 }
-.grid_esquerda{
-    grid-area: esqe;
-    border-radius: 5rem;
-    text-align: center;
-    margin: 1px 15px 1px 15px;
+.grid_esquerda{ /*aside da esquerda*/
+    grid-area: esqe; /*nome da grid*/
+    border-radius: 5rem; /*arrendondar bordas*/
+    text-align: center; /*alinhar textos ao centro*/
+    margin: 1px 15px 1px 15px; /*margem*/
 
 }
-.grid_main{
-    grid-area: main;
-    background-color: rgba(53,54,58,1);
-    text-align: justify;
-    border-radius: 5rem;
-    padding: 2rem;
-    box-shadow: 4px 4px 4px 4px red;
+.grid_main{ /*pricipal*/
+    grid-area: main; /*nome do grid*/
+    background-color: rgba(53,54,58,1); /*cor de fundo*/
+    text-align: justify; /*justificar textos*/
+    border-radius: 5rem; /*arrendondar bordas*/
+    padding: 2rem; /*espaco entre a borda e os elementos de dentro*/
+    box-shadow: 4px 4px 4px 4px red; /*sobra vermelha */
 }
-.grid_footer{
-    grid-area: foot;
-    background-color: #f46e49;
+.grid_footer{ /*footer*/
+    grid-area: foot; /*nome da grid*/
+    background-color: #f46e49; /*cor de fundo*/
 }
-
-
 /* header */
-.header_imagem{
-    font-size: 23px;
-    margin: 0px;
-    display: flex ;
-    align-items: center;
-    font-family: 'Lobster', cursive;
-    color: rgb(224, 224, 0);
-    text-shadow: 
+.header_imagem{ /*div que esta dentro do header*/
+    font-size: 23px; /*tamanho da fonte*/
+    margin: 0px; /*retirar margem*/
+    display: flex ; /*flexbox*/
+    align-items: center; /*centralizar verticalmente*/
+    font-family: 'Lobster', cursive; /*estilo da fonte */
+    color: rgb(224, 224, 0); /*cor da fonte*/
+    text-shadow: /*sobra dos textos*/
         -1px -1px 0px #000, 
         -1px 1px 0px #000,                    
         1px -1px 0px #000,                  
         1px 0px 0px #000;
 }
-header b{
-    color: rgb(182, 21, 21);
+header b{ /*segunda cor do titulo do header*/
+    color: rgb(182, 21, 21); /*cor da fonte*/
 }
-.header_imagem img{ 
-    width: auto;
-    height: 7rem;
+.header_imagem img{  /*tag img dentro da div*/
+    width: auto; /*tamanho horizontal*/
+    height: 7rem; /*tamanho vertical*/
 }
-#super{
-    width: 12rem;
+#super{ /*logo */
+    width: 12rem; /*tamanho horizontal*/
 }
 
 /* aside */
-aside figcaption{
-    font-size: xx-small;
+aside figcaption{ /*figcaption do aside*/
+    font-size: xx-small; /*tamanho da fonte*/
 }
-.ball{
-    background-image: linear-gradient(to bottom, #333333, #222222) ;
-    border: 3px solid red;
-    color: white;
-    border-radius: 5rem;
+.ball{ /*caixas de textos */
+    background-image: linear-gradient(to bottom, #333333, #222222) ; /*cor de fundo*/
+    border: 3px solid red; /*borda*/
+    color: white; /*cor da fonte*/
+    border-radius: 5rem; /*arrendondar borda*/
 }
-.grid_direita img, .grid_esquerda img{
-    width: 15rem;
+.grid_direita img, .grid_esquerda img{ /*tag img do aside da direita e esquerda*/
+    width: 15rem; /*tamanho horizontal*/
     display: block;
-    margin: auto;
+    margin: auto; /*margem*/
 }
 
 .grid_esquerda h2 {
@@ -98,8 +96,8 @@ aside figcaption{
     border-radius: 3rem;
     border: 3px solid black;
 }
-.grid_direita h1, .grid_esquerda h2{
-    font-family: 'Cinzel', serif;
+.grid_direita h1, .grid_esquerda h2{ /*tags h2 do aside da direita e da esquerda*/
+    font-family: 'Cinzel', serif; /*estilo da fonte*/
 }
 /* main */
 .grid_main figcaption{
@@ -133,20 +131,20 @@ main h2{
     color: yellow;
     margin: 0;
     font-family: 'Cinzel', serif;
-    animation: dragon 3s linear infinite;
+    animation: dragon 3s linear infinite; /*nome, tempo e repetição da animação*/
 }
-@keyframes dragon {
+@keyframes dragon { /* animação */
     0% {
-      transform: scale(1);
-      text-shadow: 0 0 0 green;
+      transform: scale(1); /*escala original*/
+      text-shadow: 0 0 0 green; /*sobra*/
     }
     50% {
-      transform: scale(1.1);
-      text-shadow: 0 0 70px green;
+      transform: scale(1.1); /*escala aumentada*/
+      text-shadow: 0 0 70px green; /*sobra no texto*/
     }
     100% {
-      transform: scale(1);
-      text-shadow: 0 0 0 green;
+      transform: scale(1); /*escala original*/
+      text-shadow: 0 0 0 green; /*sombra*/
     }
   }
 #trasnf{
@@ -164,7 +162,7 @@ footer{
 footer img{
     width: auto;
     height: 10rem;
-    animation: foot 3s linear infinite;
+    animation: foot 3s linear infinite; /*nome, tempo e repetição da animação*/
 }
 footer h2{
     font-family: 'Lobster', cursive;
@@ -186,13 +184,13 @@ footer h4{
 }
 @keyframes foot {
     0% {
-        transform: translateY(0);
+        transform: translateY(0); /*posição inicial*/
       }
       50% {
-        transform: translateY(-10px);
-      }
+        transform: translateY(-10px); /*mover imagem para cima*/
+      } 
       100% {
-        transform: translateY(0);
+        transform: translateY(0); /*voltar imagem para posição inicial*/
       }
     
 }
